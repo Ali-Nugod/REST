@@ -1,0 +1,74 @@
+// عناصر التحكم الأساسية
+const openBtn = document.getElementById('open');
+const closeBtn = document.getElementById('close');
+const menu = document.getElementById('menu');
+
+// عناصر المنيو الفرعية
+const menuToggle = document.getElementById('menu-toggle');
+const menuIcon = document.getElementById('menu-icon');
+const submenu = document.getElementById('submenu');
+
+// حماية: تأكد أن العناصر موجودة
+if (openBtn && closeBtn && menu) {
+  openBtn.addEventListener('click', () => {
+    menu.classList.add('show');
+    openBtn.style.display = 'none';
+    closeBtn.style.display = 'inline-block';
+  });
+
+  closeBtn.addEventListener('click', () => {
+    menu.classList.remove('show');
+    closeBtn.style.display = 'none';
+    openBtn.style.display = 'inline-block';
+  });
+} else {
+  console.warn('open/close/menu غير موجود/ة');
+}
+
+// عندما يضغط المستخدم على "المنيو" لفتح/إغلاق الفرعي
+if (menuToggle && menuIcon && submenu) {
+  menuToggle.addEventListener('click', (e) => {
+    e.preventDefault();
+    e.stopPropagation(); // منع الفقاعه لكي لا يصل للنقر العام
+
+    const isOpen = submenu.classList.contains('open');
+
+    if (isOpen) {
+      // اغلاق
+      submenu.classList.remove('open');
+      // افتراضي: نعيد maxHeight الى null لتسمح بالقياس اللاحق (مفيد عند إعادة الفتح)
+      submenu.style.maxHeight = null;
+      menuIcon.textContent = '+';
+      menuToggle.setAttribute('aria-expanded', 'false');
+    } else {
+      // فتح: اضبط maxHeight الى scrollHeight للحصول على انزلاق سلس
+      submenu.classList.add('open');
+      submenu.style.maxHeight = submenu.scrollHeight + 'px';
+      menuIcon.textContent = '−';
+      menuToggle.setAttribute('aria-expanded', 'true');
+    }
+  });
+
+  // عند الضغط في أي مكان خارجي نغلق الفرعي (مفيد للكمبيوتر)
+  document.addEventListener('click', (e) => {
+    const container = menuToggle.closest('.has-submenu');
+    if (!container) return;
+    if (!container.contains(e.target) && submenu.classList.contains('open')) {
+      submenu.classList.remove('open');
+      submenu.style.maxHeight = null;
+      menuIcon.textContent = '+';
+      menuToggle.setAttribute('aria-expanded', 'false');
+    }
+  });
+
+  // عند تغيير حجم النافذة، نعيد ضبط maxHeight إذا كان مفتوحاً (لمنع مشاكل القياس)
+  window.addEventListener('resize', () => {
+    if (submenu.classList.contains('open')) {
+      submenu.style.maxHeight = submenu.scrollHeight + 'px';
+    } else {
+      submenu.style.maxHeight = null;
+    }
+  });
+} else {
+  console.warn('menuToggle/menuIcon/submenu غير موجود/ة');
+}
