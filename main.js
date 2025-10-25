@@ -72,3 +72,30 @@ if (menuToggle && menuIcon && submenu) {
 } else {
   console.warn('menuToggle/menuIcon/submenu غير موجود/ة');
 }
+
+
+// ✅ زر الواتساب
+const whatsappBtn = document.querySelector('.whatsapp-btn');
+
+// ✅ إخفاؤه مبدئيًا
+whatsappBtn.style.display = 'none';
+
+// ✅ عند التمرير (scroll)
+window.addEventListener('scroll', () => {
+  const scrollY = window.scrollY; // كم نزل المستخدم من الأعلى
+  const triggerPoint = 2000; // غيّر الرقم حسب المكان الذي تريده (بالبكسل)
+
+  if (scrollY > triggerPoint) {
+    // أظهر الزر مع تأثير سلس
+    whatsappBtn.style.display = 'flex';
+    whatsappBtn.style.opacity = '1';
+    whatsappBtn.style.transform = 'translateY(0)';
+  } else {
+    // أخفِ الزر إذا عاد المستخدم للأعلى
+    whatsappBtn.style.opacity = '0';
+    whatsappBtn.style.transform = 'translateY(50px)';
+    setTimeout(() => {
+      if (window.scrollY < triggerPoint) whatsappBtn.style.display = 'none';
+    }, 300);
+  }
+});

@@ -10,7 +10,9 @@
   * {
     box-sizing: border-box;
   }
-  
+  html {
+    scroll-behavior: smooth;
+  }
   body {
     font-family: "Cairo", sans-serif;
     margin: 0;
@@ -752,3 +754,360 @@
     height: 220px;
   }
 }
+
+/* ==============================
+   🔸 Menu Preview - More Link
+   ============================== */
+   .menu-more {
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .menu-more-link {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: var(--red-color);
+    color: #fff;
+    font-size: 18px;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+  
+  .menu-more-link:hover {
+    background-color: #f23a29;
+    transform: translateY(-3px);
+  }
+  
+  /* 📱 للجوال */
+  @media (max-width: 768px) {
+    .menu-more-link {
+      font-size: 16px;
+      padding: 10px 24px;
+    }
+  }
+  
+
+
+/* 🟤 قسم تواصل معنا */
+.contact {
+  /* background: linear-gradient(to right, #fff7f1, #ffe0b3); */
+  /* background: linear-gradient(to right, #fff7f1, #f8b6210d); */
+  background: #f8b6210d;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2.4rem;
+  color: #5a2d0c;
+  margin-bottom: 10px;
+}
+
+.section-subtitle {
+  font-size: 1.1rem;
+  color: #6e4b2f;
+  margin-bottom: 50px;
+}
+
+.contact-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+/* ✅ معلومات التواصل */
+.contact-info {
+  flex: 1 1 300px;
+  max-width: 400px;
+  background: #fff;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  text-align: right;
+}
+
+.contact-info h3 {
+  margin-bottom: 15px;
+  color: #5a2d0c;
+}
+
+.contact-info p {
+  margin: 10px 0;
+  font-size: 1rem;
+  color: #333;
+}
+
+.contact-info i {
+  color: #d2691e;
+  margin-left: 8px;
+}
+
+.social-links {
+  margin-top: 15px;
+}
+
+.social-links a {
+  display: inline-block;
+  margin: 0 8px;
+  font-size: 1.3rem;
+  color: #5a2d0c;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #d2691e;
+  transform: scale(1.2);
+}
+
+/* ✅ نموذج المراسلة */
+.contact-form {
+  flex: 1 1 300px;
+  max-width: 450px;
+  background: #fff;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  text-align: right;
+}
+
+.contact-form h3 {
+  margin-bottom: 15px;
+  color: #5a2d0c;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  transition: border 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #d2691e;
+}
+
+.contact-form button {
+  width: 100%;
+  padding: 12px;
+  background: #d2691e;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.contact-form button:hover {
+  background: #b85c1e;
+}
+
+/* 📱 الميديا كويري - الهواتف */
+@media (max-width: 768px) {
+  .contact-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-info,
+  .contact-form {
+    max-width: 100%;
+  }
+}
+
+/* 🟢 زر واتساب ثابت */
+.whatsapp-btn {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  background-color: #25D366;
+  color: white;
+  font-size: 18px;
+  padding: 12px 22px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  z-index: 9999;
+  transition: all 0.3s ease;
+}
+
+.whatsapp-btn i {
+  font-size: 22px;
+}
+
+.whatsapp-btn:hover {
+  background-color: #1ebe5d;
+  transform: translateY(-3px);
+}
+
+/* 📱 للأجهزة الصغيرة */
+@media (max-width: 768px) {
+  .whatsapp-btn {
+    bottom: 15px;
+    right: 15px;
+    font-size: 16px;
+    padding: 10px 18px;
+  }
+  .whatsapp-btn i {
+    font-size: 20px;
+  }
+}
+
+/* 💻 للشاشات الكبيرة */
+@media (min-width: 1024px) {
+  .whatsapp-btn {
+    bottom: 30px;
+    right: 30px;
+    font-size: 20px;
+    padding: 14px 26px;
+  }
+}
+
+.whatsapp-btn {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.4s ease;
+}
+
+
+/* ==============================
+   🟤 FOOTER SECTION (معزول بالكامل)
+   ============================== */
+
+   .footer-sec {
+    background: #2c2c2c;
+    color: #f5f5f5;
+    padding: 60px 20px 20px;
+    font-family: "Cairo", sans-serif;
+  }
+  
+  .footer-sec-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-sec-block {
+    flex: 1 1 220px;
+    min-width: 200px;
+  }
+  
+  .footer-sec-title {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: var(--orange-color);
+    position: relative;
+  }
+  
+  .footer-sec-title::after {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 3px;
+    background: var(--orange-color);
+    margin-top: 6px;
+    border-radius: 2px;
+  }
+  
+  .footer-sec-list,
+  .footer-sec-contact {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-sec-list li,
+  .footer-sec-contact li {
+    margin-bottom: 10px;
+    color: #e0e0e0;
+  }
+  
+  .footer-sec-link {
+    color: #e0e0e0;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-sec-link:hover {
+    color: var(--orange-color);
+  }
+  
+  /* ☎️ أيقونات التواصل */
+  .footer-sec-contact i {
+    color: var(--orange-color);
+    margin-left: 8px;
+  }
+  
+  /* 🌐 السوشيال ميديا */
+  .footer-sec-social {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .footer-sec-social-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: #3b3b3b;
+    color: white;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    font-size: 18px;
+    transition: all 0.3s ease;
+  }
+  
+  .footer-sec-social-link:hover {
+    background: var(--orange-color);
+    transform: translateY(-3px);
+  }
+  
+  /* ⚙️ الحقوق السفلية */
+  .footer-sec-bottom {
+    text-align: center;
+    margin-top: 40px;
+    border-top: 1px solid #444;
+    padding-top: 15px;
+    font-size: 15px;
+    color: #bbb;
+  }
+  
+  /* 📱 ميديا للجوال */
+  @media (max-width: 768px) {
+    .footer-sec-container {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .footer-sec-social {
+      justify-content: center;
+    }
+  
+    .footer-sec-title::after {
+      margin: 8px auto 0;
+    }
+  }
+  
+  /* 💻 الشاشات الكبيرة */
+  @media (min-width: 1024px) {
+    .footer-sec-title {
+      font-size: 22px;
+    }
+  }
+  
+
