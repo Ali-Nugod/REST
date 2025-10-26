@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="meals.css">
+  <link rel="stylesheet" href="/style.css">
+  <title>CUISINE PROMENADE MEALS</title>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="left-controls">
+        <i class="fa-solid fa-bars" id="open" aria-label="فتح القائمة"></i>
+        <i class="fa-solid fa-xmark" id="close" aria-label="إغلاق القائمة"></i>
+      </div>
+
+      <p><img class="logo" src="/images/Cuisine-Promenade-logo.png" alt=""></p>
+
+      <ul id="menu">
+        <li><a href="/index.html">الرئيسية</a></li>
+        <!-- <li><a href="#about">من نحن</a></li> -->
+
+        <!-- عنصر يحتوي على القائمة الفرعية -->
+        <li class="has-submenu">
+          <a href="#" id="menu-toggle" aria-haspopup="true" aria-expanded="false" class="active">
+            المنيو <span id="menu-icon" aria-hidden="true">+</span>
+          </a>
+
+          <!-- submenu: في الشاشة الكبيرة سيكون absolute تحت العنصر -->
+          <ul class="submenu" id="submenu" aria-label="قائمة فرعية">
+            <li><a href="meals.html" class="active">الوجبات</a></li>
+            <li><a href="roast.html">المشويات</a></li>
+            <li><a href="salad.html">السلطات</a></li>
+            <li><a href="snacks.html">المقبلات</a></li>
+            <li><a href="">الإيدامات</a></li>
+            <li><a href="">المعجنات</a></li>
+            <li><a href="">الحلويات</a></li>
+            <li><a href="">المشروبات</a></li>
+          </ul>
+        </li>
+
+        <li><a href="#MiniContact">تواصل معنا</a></li>
+      </ul>
+    </nav>
+  <!-- =======================    قسم الفيديو الرئيسي======================= -->
+<section class="video-hero">
+    <img src="/images/meal/roasted-stuffed-chicken-decorated-with-pomegranate-walnuts-black-board-rice-white-plate-wooden-table.webp" alt="" class="hero-video">
+
+  <div class="overlay"></div>
+
+  <div class="hero-content">
+    <h1>نكهة الدجاج تتحدث!</h1>
+    <p>استمتع بأشهى أطباق الدجاج الطازج مع الأرز الفاخر بنكهات متوازنه تجمع بين التوابل الشرقيه والمذاق الأصيل</p>
+    <!-- <a href="#menu" class="btn-cta">اكتشف المنيو</a> -->
+  </div>
+</section>
+
+  </header>
+  <main>
+    <article>
+      <section class="menu-preview">
+        <h2>الوجبات</h2>
+      
+        <div class="menu-grid">
+      
+          <div class="menu-item">
+            <img src="/images/meal/873.webp" alt="دجاج مع رز">
+            <div class="info">
+              <h3>دجاجه شوايه مع الرز<span>Whole Shawaya Chicken with Rice</span></h3>
+              <p dir = "ltr" class="price">42 SR</p>
+              <p class="calories">3248 Kcals</p>
+            </div>
+          </div>
+      
+          <div class="menu-item">
+            <img src="/images/meal/1208.webp" alt="دجاج مع رز">
+            <div class="info">
+              <h3>نصف دجاجه شوايه مع الرز<span>Shawaya Chicken with Rice 1/2</span></h3>
+              <p dir = "ltr" class="price">21 SR</p>
+              <p class="calories">1624 Kcals</p>
+            </div>
+          </div>
+      
+          <div class="menu-item">
+            <img src="/images/meal/4007 (1).webp" alt="دجاج مع رز">
+            <div class="info">
+              <h3> ربع دجاجه شوايه مع الرز<span>Shawaya Chicken with Rice 1/4</span></h3>
+              <p dir = "ltr" class="price">12 SR</p>
+              <p class="calories">812 Kcals</p>
+            </div>
+          </div>
+      
+          <div class="menu-item">
+            <img src="/images/meal/meal2.webp" alt="دجاج على الفحم">
+            <div class="info">
+              <h3>دجاجه على الفحم مع الرز<span>Whole BBQ Chicken with Rice</span></h3>
+              <p dir = "ltr" class="price">42 SR</p>
+              <p class="calories">3010 Kcals</p>
+            </div>
+          </div>
+      
+          <div class="menu-item">
+            <img src="/images/meal/5835.webp" alt="دجاج على الفحم">
+            <div class="info">
+              <h3>نصف دجاجه على الفحم مع الرز<span>BBQ Chicken with Rice 1/2</span></h3>
+              <p dir = "ltr" class="price">21 SR</p>
+              <p class="calories">1505 Kcals</p>
+            </div>
+          </div>
+      
+          <div class="menu-item">
+            <img src="/images/meal/4010.webp" alt="دجاج مع رز">
+            <div class="info">
+              <h3>دجاجه شوايه مع الرز <span>Shawaya Chicken with Rice</span></h3>
+              <p dir = "ltr" class="price">44 SR</p>
+              <p class="calories">1320 Kcals</p>
+            </div>
+          </div>
+      
+          <div class="menu-item">
+            <img src="/images/meal/1208.webp" alt="دجاج مع رز">
+            <div class="info">
+              <h3>نصف دجاجه مع الرز<span>Shawaya Chicken with Rice 1/2</span></h3>
+              <p dir = "ltr" class="price">22 SR</p>
+              <p class="calories">660 Kcals</p>
+            </div>
+          </div>
+      
+          <div class="menu-item">
+            <img src="/images/meal/2449.webp" alt="كبسه">
+            <div class="info">
+              <h3>نفر كبسه مع اللحم<span>Meat Kabsa</span></h3>
+              <p dir = "ltr" class="price">46 SR</p>
+              <p class="calories">1530 Kcals</p>
+            </div>
+          </div>
+      
+          <div class="menu-item">
+            <img src="/images/meal/74062.webp" alt="كبسه">
+            <div class="info">
+              <h3>نصف نفر كبسة لحم<span>Meat Kabsa 1/2</span></h3>
+              <p class="price">23 SR</p>
+              <p class="calories">675 Kcals</p>
+            </div>
+          </div>
+      
+        </div>
+        <!-- <div class="menu-more">
+          <a href="#grills" class="menu-more-link">عرض كل المشويات</a>
+        </div> -->
+        
+      </section>
+      <section class="menu-categories-links">
+        <h2>اكتشف المزيد من قائمتنا</h2>
+        <div class="menu-categories-container">
+          <a href="roast.html">المشويات</a>
+          <a href="salad.html">السلطات</a>
+          <a href="">المقبلات</a>
+          <a href="">الإيدامات</a>
+          <a href="">المعجنات</a>
+          <a href="">الحلويات</a>
+          <a href="">المشروبات</a>
+        </div>
+      </section>
+      
+      
+    </article>
+    <article>
+      <section class="mini-contact" id="MiniContact">
+        <h2><i class="fa-solid fa-heart"></i> هل أعجبتك أطباقنا؟</h2>
+        <p>تواصل معنا الآن لطلب وجبتك المفضلة أو لأي استفسار.</p>
+        <div class="contact-actions">
+          <a href="https://wa.me/966500000000" class="whatsapp-btn">
+            <i class="fa-brands fa-whatsapp"></i> اطلب عبر واتساب
+          </a>
+          <a href="tel:0500000000" class="call-btn">
+            <i class="fa-solid fa-phone"></i> اتصل بنا
+          </a>
+        </div>
+        <div class="social-icons">
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#" aria-label="Tiktok"><i class="fa-brands fa-tiktok"></i></a>
+        </div>
+      </section>
+      
+    </article>
+  </main>
+  <footer class="footer-sec">
+    <div class="footer-sec-container">
+      
+      <!-- 🏠 روابط الموقع -->
+      <div class="footer-sec-block">
+        <h3 class="footer-sec-title">روابط سريعة</h3>
+        <ul class="footer-sec-list">
+          <li><a href="#home" class="footer-sec-link">الرئيسية</a></li>
+          <li><a href="#about" class="footer-sec-link">من نحن</a></li>
+          <li><a href="#contact" class="footer-sec-link">تواصل معنا</a></li>
+        </ul>
+      </div>
+  
+      <!-- 🍽️ المنيو -->
+      <div class="footer-sec-block">
+        <h3 class="footer-sec-title">المنيو</h3>
+        <ul class="footer-sec-list">
+          <li><a href="meals.html" class="footer-sec-link">الوجبات</a></li>
+          <li><a href="roast.html" class="footer-sec-link">المشويات</a></li>
+          <li><a href="salad.html" class="footer-sec-link">السلطات</a></li>
+          <li><a href="" class="footer-sec-link">المقبلات</a></li>
+          <li><a href="" class="footer-sec-link">الإيدامات</a></li>
+          <li><a href="" class="footer-sec-link">المعجنات</a></li>
+          <li><a href="" class="footer-sec-link">الحلويات</a></li>
+          <li><a href="" class="footer-sec-link">المشروبات</a></li>
+        </ul>
+      </div>
+  
+      <!-- 📞 تواصل معنا -->
+      <div class="footer-sec-block">
+        <h3 class="footer-sec-title">تواصل معنا</h3>
+        <ul class="footer-sec-contact">
+          <li><i class="fas fa-phone"></i> <a href="tel:+966500000000" class="footer-sec-link">+966 50 000 0000</a></li>
+          <li><i class="fas fa-envelope"></i> <a href="mailto:info@bukhari.com" class="footer-sec-link">info@.com</a></li>
+          <li><i class="fas fa-map-marker-alt"></i> الرياض - المملكة العربية السعودية</li>
+        </ul>
+      </div>
+  
+      <!-- 🌐 مواقع التواصل -->
+      <div class="footer-sec-block">
+        <h3 class="footer-sec-title">تابعنا</h3>
+        <div class="footer-sec-social">
+          <a href="#" class="footer-sec-social-link"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="footer-sec-social-link"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="footer-sec-social-link"><i class="fab fa-x-twitter"></i></a>
+          <a href="#" class="footer-sec-social-link"><i class="fab fa-whatsapp"></i></a>
+          <a href="#" class="footer-sec-social-link"><i class="fab fa-tiktok"></i></a>
+        </div>
+      </div>
+  
+    </div>
+  
+    <div class="footer-sec-bottom">
+      <p>© 2025 مطعم كوزين بروميناد. جميع الحقوق محفوظة.</p>
+    </div>
+  </footer>
+  
+
+  <script src="/main.js"></script>
+</body>
+</html>

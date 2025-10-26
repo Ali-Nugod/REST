@@ -3,6 +3,7 @@ const openBtn = document.getElementById('open');
 const closeBtn = document.getElementById('close');
 const menu = document.getElementById('menu');
 
+
 // عناصر المنيو الفرعية
 const menuToggle = document.getElementById('menu-toggle');
 const menuIcon = document.getElementById('menu-icon');
@@ -99,3 +100,40 @@ window.addEventListener('scroll', () => {
     }, 300);
   }
 });
+
+// تفعيل حالة active عند الضغط على عنصر في القائمة
+
+// window.addEventListener("DOMContentLoaded", () => {
+//   const firstMenuItem = document.querySelector("#menu li:first-child");
+//   firstMenuItem.classList.add("active");
+// });
+
+const menuLinks = document.querySelectorAll("#menu li");
+menuLinks.forEach(li => {
+  li.addEventListener("click", () => {
+    
+    menuLinks.forEach(link => link.classList.remove("active"));
+
+ 
+    li.classList.add("active");
+  });
+});
+
+
+
+
+
+// const allMenuItems = document.querySelectorAll("#menu li, #menu .submenu li");
+
+// allMenuItems.forEach(li => {
+//   li.addEventListener("click", (e) => {
+    
+//     allMenuItems.forEach(link => link.classList.remove("active"));
+
+   
+//     li.classList.add("active");
+
+    
+//     e.stopPropagation();
+//   });
+// });

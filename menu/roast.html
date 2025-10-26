@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="meals.css">
+  <link rel="stylesheet" href="/style.css">
+  <title>CUISINE PROMENADE ROAST</title>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="left-controls">
+        <i class="fa-solid fa-bars" id="open" aria-label="فتح القائمة"></i>
+        <i class="fa-solid fa-xmark" id="close" aria-label="إغلاق القائمة"></i>
+      </div>
+
+      <p><img class="logo" src="/images/Cuisine-Promenade-logo.png" alt=""></p>
+
+      <ul id="menu">
+        <li><a href="/index.html">الرئيسية</a></li>
+        <!-- <li><a href="#about">من نحن</a></li> -->
+
+        <!-- عنصر يحتوي على القائمة الفرعية -->
+        <li class="has-submenu">
+          <a href="#" id="menu-toggle" aria-haspopup="true" aria-expanded="false" class="active">
+            المنيو <span id="menu-icon" aria-hidden="true">+</span>
+          </a>
+
+          <!-- submenu: في الشاشة الكبيرة سيكون absolute تحت العنصر -->
+          <ul class="submenu" id="submenu" aria-label="قائمة فرعية">
+            <li><a href="meals.html">الوجبات</a></li>
+            <li><a href="roast.html" class="active">المشويات</a></li>
+            <li><a href="salad.html">السلطات</a></li>
+            <li><a href="snacks.html">المقبلات</a></li>
+            <li><a href="">الإيدامات</a></li>
+            <li><a href="">المعجنات</a></li>
+            <li><a href="">الحلويات</a></li>
+            <li><a href="">المشروبات</a></li>
+          </ul>
+        </li>
+
+        <li><a href="#MiniContact">تواصل معنا</a></li>
+      </ul>
+    </nav>
+  <!-- =======================    قسم الفيديو الرئيسي======================= -->
+<section class="video-hero">
+    <img src="/images/roast/2911.webp" alt="" class="hero-video">
+
+  <div class="overlay"></div>
+
+  <div class="hero-content">
+    <h1>نكهات النار والبهار</h1>
+    <p>اكتشف روعة المشويات الطازجه المشبعه بالنكهات الغنيه والتتبيلات المميزه لتعيش تجربة شواء فريده من نوعها</p>
+    <!-- <a href="#menu" class="btn-cta">اكتشف المنيو</a> -->
+  </div>
+</section>
+
+  </header>
+  <main>
+    <article>
+      <section class="menu-preview">
+        <h2>المشويات</h2>
+      
+        <div class="menu-grid">
+      
+          <div class="menu-item">
+            <img src="/images/roast/6245.webp" alt="كباب">
+            <div class="info">
+              <h3>نفر كباب لحم<span>Nafar Kabab Meat</span></h3>
+              <p dir = "ltr" class="price">26 SR</p>
+              <p dir = "ltr" class="price">  22 SR بدون رز</p>
+              <p class="calories">596 Kcals</p>
+            </div>
+          </div>
+      
+          <div class="menu-item">
+            <img src="/images/roast/1146.webp" alt="كباب">
+            <div class="info">
+              <h3>نفر كباب دجاج<span>Nagar Kabab Chicken</span></h3>
+              <p dir = "ltr" class="price">26 SR</p>
+              <p dir = "ltr" class="price">  22 SR بدون رز</p>
+              <p class="calories">542 Kcals</p>
+            </div>
+          </div>
+      
+          <div class="menu-item">
+            <img src="/images/roast/10791.webp" alt="شيش طاووق">
+            <div class="info">
+              <h3>شيش طاووق<span></span>Shish Tawook</h3>
+              <p dir = "ltr" class="price">26 SR</p>
+              <p dir = "ltr" class="price">  22 SR بدون رز</p>
+              <p class="calories">412 Kcals</p>
+            </div>
+          </div>
+      
+          <div class="menu-item">
+            <img src="/images/roast/797.webp" alt="أوصال لحم">
+            <div class="info">
+              <h3>أوصال لحم<span>Meat Cutlet</span></h3>
+              <p dir = "ltr" class="price">26 SR</p>
+              <p dir = "ltr" class="price">  22 SR بدون رز</p>
+              <p class="calories">412 Kcals</p>
+            </div>
+          </div>
+      
+          <div class="menu-item">
+            <img src="/images/roast/1166.webp" alt="كباب">
+            <div class="info">
+              <h3>سندوتش كباب<span>Kabab Sandwich</span></h3>
+              <p dir = "ltr" class="price">8 SR</p>
+              <p class="calories">227 Kcals</p>
+            </div>
+          </div>
+      
+          <div class="menu-item">
+            <img src="/images/roast/11970.webp" alt="شيش">
+            <div class="info">
+              <h3>سندوتش شيش<span>Shish Sandwich</span></h3>
+              <p dir = "ltr" class="price">8 SR</p>
+              <p class="calories">147 Kcals</p>
+            </div>
+          </div>
+      
+          <div class="menu-item">
+            <img src="/images/roast/2148664031.webp" alt="دجاجه شوايه">
+            <div class="info">
+              <h3>دجاجه شوايه<span>Shawaya Chicken</span></h3>
+              <p dir = "ltr" class="price">30 SR</p>
+              <p class="calories">1320 Kcals</p>
+            </div>
+          </div>
+      
+          <div class="menu-item">
+            <img src="/images/roast/8872.webp" alt="نصف دجاجه شوايه">
+            <div class="info">
+              <h3>نصف دجاجه شوايه<span>Shawaya Chicken 1/2</span></h3>
+              <p dir = "ltr" class="price">15 SR</p>
+              <p class="calories">660 Kcals</p>
+            </div>
+          </div>
+      
+          <div class="menu-item">
+            <img src="/images/roast/79395.webp" alt="دجاج">
+            <div class="info">
+              <h3>ربع دجاجه شوايه<span>Shawaya Chicken 1/4</span></h3>
+              <p class="price">9 SR</p>
+              <p class="calories">315 Kcals</p>
+            </div>
+          </div>
+          <div class="menu-item">
+            <img src="/images/roast/44425.webp" alt="دجاج">
+            <div class="info">
+              <h3>دجاجه على الفحم<span>BBQ Chicken</span></h3>
+              <p dir = "ltr" class="price">30 SR</p>
+              <p class="calories">1290 Kcals</p>
+            </div>
+          </div>
+      
+          <div class="menu-item">
+            <img src="/images/roast/37860.webp" alt="دجاج">
+            <div class="info">
+              <h3>نصف دجاجه على الفحم<span>BBQ Chicken 1/2</span></h3>
+              <p dir = "ltr" class="price">15 SR</p>
+              <p class="calories">645 Kcals</p>
+            </div>
+          </div>
+      
+          <div class="menu-item">
+            <img src="/images/roast/293.webp" alt="رز">
+            <div class="info">
+              <h3>رز بخاري<span>Bukhari Rice</span></h3>
+              <p dir = "ltr" class="price">7 SR</p>
+              <p class="calories">995 Kcals</p>
+            </div>
+          </div>
+      
+          <div class="menu-item">
+            <img src="/images/roast/81862.webp" alt="رز">
+            <div class="info">
+              <h3>رز برياني<span>Biriani Rice</span></h3>
+              <p dir = "ltr" class="price">7 SR</p>
+              <p class="calories">995 Kcals</p>
+            </div>
+          </div>
+      
+          <div class="menu-item">
+            <img src="/images/roast/43907.webp" alt="رز">
+            <div class="info">
+              <h3>رز أبيض<span>White Rice</span></h3>
+              <p dir = "ltr" class="price">7 SR</p>
+              <p class="calories">800 Kcals</p>
+            </div>
+          </div>
+      
+          <div class="menu-item">
+            <img src="/images/roast/1385.webp" alt="رز">
+            <div class="info">
+              <h3>رز أمريكي<span>American Rice</span></h3>
+              <p dir = "ltr" class="price">7 SR</p>
+              <p class="calories">1104 Kcals</p>
+            </div>
+          </div>
+      
+          <div class="menu-item">
+            <img src="/images/roast/101883.webp" alt="زبيب">
+            <div class="info">
+              <h3>زبيب<span>Raisin Plate</span></h3>
+              <p class="price">5 SR</p>
+              <p class="calories">302 Kcals</p>
+            </div>
+          </div>
+      
+        </div>
+        <!-- <div class="menu-more">
+          <a href="#grills" class="menu-more-link">عرض كل المشويات</a>
+        </div> -->
+        
+      </section>
+      <section class="menu-categories-links">
+        <h2>اكتشف المزيد من قائمتنا</h2>
+        <div class="menu-categories-container">
+          <a href="meals.html">الوجبات</a>
+          <a href="salad.html">السلطات</a>
+          <a href="">المقبلات</a>
+          <a href="">الإيدامات</a>
+          <a href="">المعجنات</a>
+          <a href="">الحلويات</a>
+          <a href="">المشروبات</a>
+        </div>
+      </section>
+      
+      
+    </article>
+    <article>
+      <section class="mini-contact" id="MiniContact">
+        <h2><i class="fa-solid fa-heart"></i> هل أعجبتك أطباقنا؟</h2>
+        <p>تواصل معنا الآن لطلب وجبتك المفضلة أو لأي استفسار.</p>
+        <div class="contact-actions">
+          <a href="https://wa.me/966500000000" class="whatsapp-btn">
+            <i class="fa-brands fa-whatsapp"></i> اطلب عبر واتساب
+          </a>
+          <a href="tel:0500000000" class="call-btn">
+            <i class="fa-solid fa-phone"></i> اتصل بنا
+          </a>
+        </div>
+        <div class="social-icons">
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#" aria-label="Tiktok"><i class="fa-brands fa-tiktok"></i></a>
+        </div>
+      </section>
+      
+    </article>
+  </main>
+  <footer class="footer-sec">
+    <div class="footer-sec-container">
+      
+      <!-- 🏠 روابط الموقع -->
+      <div class="footer-sec-block">
+        <h3 class="footer-sec-title">روابط سريعة</h3>
+        <ul class="footer-sec-list">
+          <li><a href="#home" class="footer-sec-link">الرئيسية</a></li>
+          <li><a href="#about" class="footer-sec-link">من نحن</a></li>
+          <li><a href="#contact" class="footer-sec-link">تواصل معنا</a></li>
+        </ul>
+      </div>
+  
+      <!-- 🍽️ المنيو -->
+      <div class="footer-sec-block">
+        <h3 class="footer-sec-title">المنيو</h3>
+        <ul class="footer-sec-list">
+            <li><a href="meals.html" class="footer-sec-link">الوجبات</a></li>
+            <li><a href="roast.html" class="footer-sec-link">المشويات</a></li>
+            <li><a href="" class="footer-sec-link">السلطات</a></li>
+            <li><a href="salad.html" class="footer-sec-link">المقبلات</a></li>
+            <li><a href="" class="footer-sec-link">الإيدامات</a></li>
+            <li><a href="" class="footer-sec-link">المعجنات</a></li>
+            <li><a href="" class="footer-sec-link">الحلويات</a></li>
+            <li><a href="" class="footer-sec-link">المشروبات</a></li>
+        </ul>
+      </div>
+  
+      <!-- 📞 تواصل معنا -->
+      <div class="footer-sec-block">
+        <h3 class="footer-sec-title">تواصل معنا</h3>
+        <ul class="footer-sec-contact">
+          <li><i class="fas fa-phone"></i> <a href="tel:+966500000000" class="footer-sec-link">+966 50 000 0000</a></li>
+          <li><i class="fas fa-envelope"></i> <a href="mailto:info@bukhari.com" class="footer-sec-link">info@.com</a></li>
+          <li><i class="fas fa-map-marker-alt"></i> الرياض - المملكة العربية السعودية</li>
+        </ul>
+      </div>
+  
+      <!-- 🌐 مواقع التواصل -->
+      <div class="footer-sec-block">
+        <h3 class="footer-sec-title">تابعنا</h3>
+        <div class="footer-sec-social">
+          <a href="#" class="footer-sec-social-link"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="footer-sec-social-link"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="footer-sec-social-link"><i class="fab fa-x-twitter"></i></a>
+          <a href="#" class="footer-sec-social-link"><i class="fab fa-whatsapp"></i></a>
+          <a href="#" class="footer-sec-social-link"><i class="fab fa-tiktok"></i></a>
+        </div>
+      </div>
+  
+    </div>
+  
+    <div class="footer-sec-bottom">
+      <p>© 2025 مطعم كوزين بروميناد. جميع الحقوق محفوظة.</p>
+    </div>
+  </footer>
+  
+
+  <script src="/main.js"></script>
+</body>
+</html>

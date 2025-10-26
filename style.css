@@ -17,6 +17,26 @@
     font-family: "Cairo", sans-serif;
     margin: 0;
   }
+  #menu li.active,
+  #menu .submenu li.active {
+    background: rgba(0, 0, 0, 0.1);
+    columns: #000;
+    transition: 0 .3s ease;
+    padding: 8px 6px;
+  }
+
+  #menu .submenu li:hover {
+    background: rgba(0, 0, 0, 0.1);
+    columns: #000;
+    transition: 0 .3s ease;
+    /* padding: 8px 6px; */
+  }
+  .active {
+    background: rgba(0, 0, 0, 0.1);
+    columns: #000;
+    transition: 0 .3s ease;
+    padding: 8px 6px;
+  }
   
   /* =========================
      📱 للأجهزة الصغيرة (الموبايل)
@@ -170,6 +190,15 @@
   
     #menu > li:hover > a {
       background: rgba(0, 0, 0, 0.1);
+    }
+    /* .active {
+      background: rgba(0, 0, 0, 0.1);
+    } */
+    #menu li.active {
+      background: rgba(0, 0, 0, 0.1);
+      columns: #000;
+      transition: 0 .3s ease;
+      padding: 8px 6px;
     }
   
     /* المنيو الفرعية تظهر أسفل العنصر */
