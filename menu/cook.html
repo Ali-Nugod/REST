@@ -7,7 +7,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="meals.css">
   <link rel="stylesheet" href="../style.css">
-  <title>CUISINE PROMENADE ROAST</title>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <title>CUISINE PROMENADE COOK</title>
 </head>
 <body>
   <header>
@@ -17,7 +18,7 @@
         <i class="fa-solid fa-xmark" id="close" aria-label="إغلاق القائمة"></i>
       </div>
 
-      <p><img class="logo" src="../images/Cuisine-Promenade-logo.png" alt=""></p>
+      <p><img class="logo logoReveal" src="../images/Cuisine-Promenade-logo.png" alt=""></p>
 
       <ul id="menu">
         <li><a href="../index.html">الرئيسية</a></li>
@@ -34,10 +35,10 @@
             <li><a href="meals.html">الوجبات</a></li>
             <li><a href="roast.html">المشويات</a></li>
             <li><a href="salad.html">السلطات</a></li>
-            <li><a href="snacks.html" class="active">المقبلات</a></li>
-            <li><a href="">الإيدامات</a></li>
-            <li><a href="">المعجنات</a></li>
-            <li><a href="">الحلويات</a></li>
+            <li><a href="snacks.html">المقبلات</a></li>
+            <li><a href="cook.html" class="active">الإيدامات</a></li>
+            <li><a href="pastries.html">المعجنات</a></li>
+            <li><a href="desserts.html">الحلويات</a></li>
             <li><a href="">المشروبات</a></li>
           </ul>
         </li>
@@ -47,14 +48,14 @@
     </nav>
   <!-- =======================    قسم الفيديو الرئيسي======================= -->
 <section class="video-hero">
-    <img src="../images/snacks/6505.webp" alt="" class="hero-video">
+    <img src="../images/cook/4539.webp" alt="" class="hero-video">
 
   <div class="overlay"></div>
 
   <div class="hero-content">
-    <h1>ابدأ رحلتك بالنكهه</h1>
-    <p>تذوق تشكيلتنا المميزه من المقبلات المحضره بعنايه لتفتح شهيتك وتمنحك بدايه مثالبه لوجبتك</p>
-    <!-- <a href="#menu" class="btn-cta">اكتشف المنيو</a> -->
+    <h1 class="one">إيداماتنا نكهة الأصاله بكل تفاصيلها</h1>
+    <p>أطباق شهيه بصلصات غنيه وتوابل متقنه تجمع بين الطابع المنزلي والمذاق العصري لتجربه لا تقاوم</p>
+    <!-- <a href="#menu" class="btn-cta">اكتشف المنيو</a>-->
   </div>
 </section>
 
@@ -62,12 +63,12 @@
   <main>
     <article>
       <section class="menu-preview">
-        <h2>الإيدامات</h2>
+        <h2 class="one">الإيدامات</h2>
       
         <div class="menu-grid">
       
-          <div class="menu-item">
-            <img src="../images/snacks/22472.webp" alt="مشكل">
+          <div class="menu-item card">
+            <img src="../images/cook/2148132040.webp" alt="مشكل">
             <div class="info">
               <h3>مشكل على الفرن<span>Oven-Baked Mix</span></h3>
               <p dir = "ltr" class="price">8 SR كبير</p>
@@ -77,8 +78,8 @@
             </div>
           </div>
       
-          <div class="menu-item">
-            <img src="../images/snacks/2652.webp" alt="باميه">
+          <div class="menu-item card">
+            <img src="../images/cook/29004.webp" alt="باميه">
             <div class="info">
               <h3>باميه<span>Okra</span></h3>
               <p dir = "ltr" class="price">8 SR كبير</p>
@@ -88,8 +89,8 @@
             </div>
           </div>
       
-          <div class="menu-item">
-            <img src="../images/snacks/6842.webp" alt="مسقعه">
+          <div class="menu-item card">
+            <img src="../images/cook/2150561782.webp" alt="مسقعه">
             <div class="info">
               <h3>مسقعه<span>Eggplant</span></h3>
               <p dir = "ltr" class="price">8 SR كبير</p>
@@ -99,8 +100,8 @@
             </div>
           </div>
       
-          <div class="menu-item">
-            <img src="../images/snacks/2148814517.webp" alt="مشكل">
+          <div class="menu-item card">
+            <img src="../images/cook/13753.webp" alt="مشكل">
             <div class="info">
               <h3>مشكل خضار<span>Mixed Vegetable</span></h3>
               <p dir = "ltr" class="price">7 SR كبير</p>
@@ -110,8 +111,8 @@
             </div>
           </div>
       
-          <div class="menu-item">
-            <img src="../images/snacks/2648.webp" alt="فاصوليا">
+          <div class="menu-item card">
+            <img src="../images/cook/2148660399.webp" alt="فاصوليا">
             <div class="info">
               <h3>فاصوليا بيضاء<span>Mixed Vegetable</span></h3>
               <p dir = "ltr" class="price">7 SR كبير</p>
@@ -120,8 +121,8 @@
               <p class="calories">242 Kcals</p>
             </div>
           </div>
-          <div class="menu-item">
-            <img src="../images/snacks/6842.webp" alt="بطاطس">
+          <div class="menu-item card">
+            <img src="../images/cook/2149370826.webp" alt="بطاطس">
             <div class="info">
               <h3>بطاطس<span>Potatoes</span></h3>
               <p dir = "ltr" class="price">7 SR كبير</p>
@@ -131,8 +132,8 @@
             </div>
           </div>
       
-          <div class="menu-item">
-            <img src="../images/snacks/2148814517.webp" alt="ملوخيه">
+          <div class="menu-item card">
+            <img src="../images/cook/2148825126.webp" alt="ملوخيه">
             <div class="info">
               <h3>ملوخيه<span>Molukhiyah</span></h3>
               <p dir = "ltr" class="price">7 SR كبير</p>
@@ -142,8 +143,8 @@
             </div>
           </div>
       
-          <div class="menu-item">
-            <img src="../images/snacks/2648.webp" alt="مكرونه">
+          <div class="menu-item card">
+            <img src="../images/cook/14066.webp" alt="مكرونه">
             <div class="info">
               <h3>مكرونه بشاميل<span>Pashamel Pasta</span></h3>
               <p dir = "ltr" class="price">25 SR كبير</p>
@@ -160,15 +161,15 @@
         
       </section>
       <section class="menu-categories-links">
-        <h2>اكتشف المزيد من قائمتنا</h2>
+        <h2 class="one">اكتشف المزيد من قائمتنا</h2>
         <div class="menu-categories-container">
           <a href="meals.html">الوجبات</a>
-          <a href="roast.html.html">المشويات</a>
+          <a href="roast.html">المشويات</a>
           <a href="salad.html">السلطات</a>
           <a href="snacks.html">المقبلات</a>
-          <a href="">المعجنات</a>
-          <a href="">الحلويات</a>
-          <a href="">المشروبات</a>
+          <a href="pastries.html">المعجنات</a>
+          <a href="desserts.html">الحلويات</a>
+          <a href="drinks.html">المشروبات</a>
         </div>
       </section>
       
@@ -176,7 +177,7 @@
     </article>
     <article>
       <section class="mini-contact" id="MiniContact">
-        <h2><i class="fa-solid fa-heart"></i> هل أعجبتك أطباقنا؟</h2>
+        <h2><i class="fa-solid fa-heart one"></i> هل أعجبتك أطباقنا؟</h2>
         <p>تواصل معنا الآن لطلب وجبتك المفضلة أو لأي استفسار.</p>
         <div class="contact-actions">
           <a href="https://wa.me/966500000000" class="whatsapp-btn">
@@ -201,7 +202,7 @@
       
       <!-- 🏠 روابط الموقع -->
       <div class="footer-sec-block">
-        <h3 class="footer-sec-title">روابط سريعة</h3>
+        <h3 class="footer-sec-title one">روابط سريعة</h3>
         <ul class="footer-sec-list">
           <li><a href="#home" class="footer-sec-link">الرئيسية</a></li>
           <li><a href="#about" class="footer-sec-link">من نحن</a></li>
@@ -211,22 +212,22 @@
   
       <!-- 🍽️ المنيو -->
       <div class="footer-sec-block">
-        <h3 class="footer-sec-title">المنيو</h3>
+        <h3 class="footer-sec-title one">المنيو</h3>
         <ul class="footer-sec-list">
             <li><a href="meals.html" class="footer-sec-link">الوجبات</a></li>
             <li><a href="roast.html" class="footer-sec-link">المشويات</a></li>
             <li><a href="salad.html" class="footer-sec-link">السلطات</a></li>
             <li><a href="salad.html" class="footer-sec-link">المقبلات</a></li>
-            <li><a href="" class="footer-sec-link">الإيدامات</a></li>
-            <li><a href="" class="footer-sec-link">المعجنات</a></li>
-            <li><a href="" class="footer-sec-link">الحلويات</a></li>
-            <li><a href="" class="footer-sec-link">المشروبات</a></li>
+            <li><a href="cook.html" class="footer-sec-link">الإيدامات</a></li>
+            <li><a href="pastries.html" class="footer-sec-link">المعجنات</a></li>
+            <li><a href="desserts.html" class="footer-sec-link">الحلويات</a></li>
+            <li><a href="drinks.html" class="footer-sec-link">المشروبات</a></li>
         </ul>
       </div>
   
       <!-- 📞 تواصل معنا -->
       <div class="footer-sec-block">
-        <h3 class="footer-sec-title">تواصل معنا</h3>
+        <h3 class="footer-sec-title one">تواصل معنا</h3>
         <ul class="footer-sec-contact">
           <li><i class="fas fa-phone"></i> <a href="tel:+966500000000" class="footer-sec-link">+966 50 000 0000</a></li>
           <li><i class="fas fa-envelope"></i> <a href="mailto:info@bukhari.com" class="footer-sec-link">info@.com</a></li>
@@ -236,7 +237,7 @@
   
       <!-- 🌐 مواقع التواصل -->
       <div class="footer-sec-block">
-        <h3 class="footer-sec-title">تابعنا</h3>
+        <h3 class="footer-sec-title one">تابعنا</h3>
         <div class="footer-sec-social">
           <a href="#" class="footer-sec-social-link"><i class="fab fa-facebook-f"></i></a>
           <a href="#" class="footer-sec-social-link"><i class="fab fa-instagram"></i></a>
@@ -249,7 +250,7 @@
     </div>
   
     <div class="footer-sec-bottom">
-      <p>© 2025 مطعم كوزين بروميناد. جميع الحقوق محفوظة.</p>
+      <p dir="ltr">© 2025 مطعم كوزين بروميناد. جميع الحقوق محفوظة.</p>
     </div>
   </footer>
   

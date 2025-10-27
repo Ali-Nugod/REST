@@ -108,7 +108,8 @@
     /* color: #444; */
   }
   a.call-btn {
-    color: #444;
+    color: var(--white);
+    background-color: #25d366;
 }
   
   .whatsapp-btn {
@@ -117,8 +118,8 @@
   }
   
   .call-btn {
-    background: var(--orange-color);
-    color: #fff;
+    color: var(--white);
+    background-color: white;
   }
   
   .whatsapp-btn:hover {
@@ -126,7 +127,7 @@
   }
   
   .call-btn:hover {
-    background: #e07b00;
+    background: #1ea956;
   }
   
   /* 🎯 Social Icons */

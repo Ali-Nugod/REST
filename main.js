@@ -139,7 +139,11 @@ menuLinks.forEach(li => {
 // });
 
 
-window.onload = function() {
+// window.onload = function() {
+
+// }
+
+document.addEventListener("DOMContentLoaded",function() {
   if(window.innerWidth <= 768) {
     ScrollReveal().reveal('.logoReveal',{
       origin: "bottom", distance:"40px", duration: 2500, delay:200, reset: true
@@ -161,4 +165,4 @@ window.onload = function() {
       origin: "bottom", distance:"80px", duration: 2500, delay:300, reset: true
   });
   }
-}
+})
