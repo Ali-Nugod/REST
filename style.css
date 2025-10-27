@@ -64,7 +64,7 @@
     }
   
     .logo {
-      width: 80px;
+      width: 100px;
     }
   
     /* القائمة الرئيسية */
@@ -163,7 +163,7 @@
     }
   
     .logo {
-      width: 80px;
+      width: 150px;
     }
   
     #menu {
@@ -782,6 +782,14 @@
   .menu-item img {
     height: 220px;
   }
+}
+@media (min-width: 1600px) {
+  .menu-preview {
+    padding: 60px 300px;
+}
+.contact-content {
+  flex-direction: row-reverse;
+}
 }
 
 /* ==============================

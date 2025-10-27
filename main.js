@@ -137,3 +137,28 @@ menuLinks.forEach(li => {
 //     e.stopPropagation();
 //   });
 // });
+
+
+window.onload = function() {
+  if(window.innerWidth <= 768) {
+    ScrollReveal().reveal('.logoReveal',{
+      origin: "bottom", distance:"40px", duration: 2500, delay:200, reset: true
+  });
+      ScrollReveal().reveal('.one',{
+        origin: "bottom", distance:"40px", duration: 2500, delay:200, reset: true
+    });
+      ScrollReveal().reveal('.card',{
+        origin: "bottom", distance:"40px", duration: 1500, delay:300, reset: false
+    });
+  }else {
+    ScrollReveal().reveal('.logoReveal',{
+      origin: "bottom", distance:"80px", duration: 2500, delay:200, reset: true
+  });
+    ScrollReveal().reveal('.one',{
+      origin: "bottom", distance:"80px", duration: 2500, delay:200, reset: true
+  });
+    ScrollReveal().reveal('.card',{
+      origin: "bottom", distance:"80px", duration: 2500, delay:300, reset: true
+  });
+  }
+}
