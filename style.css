@@ -1,7 +1,7 @@
 :root {
     --orange: #f8b621;
     --red-color: #d03d2f;
-    --white: #fff;
+    --white: #ffffff;
     --submenu-bg: #fff7e6;
     --gray-color: #65675f;
   }
@@ -687,12 +687,17 @@
 .menu-preview {
   text-align: center;
   padding: 60px 20px;
-  background-color: var(--white);
+  /* background-color: var(--white); */
+  background-image: linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),url('images/3752324_1991967.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-attachment: fixed; */
 }
 
 .menu-preview h2 {
   font-size: 32px;
-  color: #d03d2f;
+  color: var(--white);
   margin-bottom: 40px;
   font-family: "Cairo", sans-serif;
 }
